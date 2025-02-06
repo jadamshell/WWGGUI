@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e293b;
+}
+
+.fill-gray-400 {
+  fill: #9ca3af;
+}
+
+.fill-red-500 {
+  fill: #ef4444;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
