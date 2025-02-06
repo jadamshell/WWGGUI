@@ -277,7 +277,7 @@ const MonitorPanel = ({ controlButtons, activeButton, handleButtonClick }) => {
           "DM10 Long Branch"
         ];
 
-        // Create renderer for main nodes - 3D sphere, red, 50m
+        // Create renderer for main nodes - 3D sphere
         const nodesRenderer = {
           type: "simple",
           symbol: {
@@ -293,7 +293,7 @@ const MonitorPanel = ({ controlButtons, activeButton, handleButtonClick }) => {
           }
         };
 
-        // Create renderer for supplemental nodes - 3D sphere, blue, 15m
+        // Create renderer for supplemental nodes - 3D sphere
         const suppNodesRenderer = {
           type: "simple",
           symbol: {
@@ -309,7 +309,7 @@ const MonitorPanel = ({ controlButtons, activeButton, handleButtonClick }) => {
           }
         };
 
-        // Create renderer for network - 3D path, light blue with transparency
+        // Create renderer for network - 3D path
         const networkRenderer = {
           type: "simple",
           symbol: {
@@ -1251,10 +1251,10 @@ const margin = { top: 40, right: 60, bottom: 125, left: 60 }; // Increased botto
 
 const WaterDashboard = () => {
   
-  // In the WaterDashboard component, add a state for panel visibility
+  
 const [isPanelVisible, setIsPanelVisible] = useState(true);
 
-// Add styles for the dockable panel
+
 const dockablePanelStyles = {
   position: 'absolute',
   top: '0',
@@ -1268,7 +1268,7 @@ const dockablePanelStyles = {
   overflowY: 'auto'
 };
 
-// Update the button grid style to be 2 columns
+
 const buttonGridStyles = {
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
@@ -1276,7 +1276,7 @@ const buttonGridStyles = {
   padding: '8px'
 };
 
-// Add a toggle button
+
 const toggleButtonStyles = {
   position: 'absolute',
   top: '8px',
@@ -1290,7 +1290,7 @@ const toggleButtonStyles = {
   cursor: 'pointer'
 };
 
-// Update the CustomButton style for the new layout
+
 const customButtonStyles = {
   WebkitAppearance: 'none',
   appearance: 'none',
@@ -1315,7 +1315,7 @@ const customButtonStyles = {
     }
   };
 
-  // Update the button mapping to include node names
+
   const controlButtons = [
     { id: 'treatment', label: 'Water Treatment Plant', nodeName: 'Wastewater Treatment Plant' },
     { id: 'west40', label: 'DM17 West 40', nodeName: 'DM17 West 40' },
